@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="">
       <meta name="author" content="">
-      <title>SB Admin 2 - Bootstrap Admin Theme</title>
+      <title>iRs</title>
       <!-- Bootstrap Core CSS -->
       <link href="${pageContext.request.contextPath}/resources/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
       <!-- MetisMenu CSS -->
@@ -37,7 +37,7 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="${pageContext.request.contextPath}/login"><img alt="logo" src="${pageContext.request.contextPath}/resources/images/irs_logo2.jpg" height="42px;"></a>
+               <a class="navbar-brand" href="${pageContext.request.contextPath}/login"><img alt="logo" src="${pageContext.request.contextPath}/resources/images/irs_logo3.jpg" height="42px;"></a>
             </div>
             <!-- /.navbar-header -->
             <ul class="nav navbar-top-links navbar-right">

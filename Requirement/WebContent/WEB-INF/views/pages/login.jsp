@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>SB Admin 2 - Bootstrap Admin Theme</title>
+<title>iRs</title>
 <!-- Bootstrap Core CSS -->
 <link
 	href="${pageContext.request.contextPath}/resources/bower_components/bootstrap/dist/css/bootstrap.min.css"
@@ -47,38 +48,36 @@ body {
 						<h3 class="panel-title">Please Sign In</h3>
 					</div>
 					<div class="panel-body">
-						<form role="form">
+						<form:form role="form" action="${pageContext.request.contextPath}/login" modelAttribute="user" method="POST">
 							<fieldset>
 								<div class="form-group">
-									<input class="form-control" placeholder="Username" name="email"
-										type="email" autofocus>
+									<form:input class="form-control" placeholder="Username" name="user_name"
+										path="userName"  />
 								</div>
 								<div class="form-group">
-									<input class="form-control" placeholder="Password"
-										name="password" type="password" value="">
+									<form:input class="form-control" placeholder="Password"
+										path="password" name="pass_word" type="password" value="" />
 								</div>
 								<div class="form-group">
-									<select role="" class="form-control">
-										<option required value="0">Select a role</option>
-										<option>Business Analyst</option>
-										<option>Developer</option>
-									</select>
+									<form:select class="form-control" name="ro_le" path="role">
+										<option value="0">Select a role</option>
+										<option value="ba">Business Analyst</option>
+										<option value="dev">Developer</option>
+									</form:select>
 								</div>
 								<div class="checkbox">
 									<label> <input name="remember" type="checkbox"
 										value="Remember Me">Remember Me
 									</label>
 								</div>
-								<!-- Change this to a button or input when using this as a form -->
-								<a href="${pageContext.request.contextPath}/login"
-									class="btn btn-lg btn-success btn-block">Login</a>
+									<input class="col-md-12 btn btn-success" type="submit" value="Login" />
 							</fieldset>
-						</form>
+						</form:form>
 					</div>
 				</div>
 			</div>
 			<!-- ben -->
-			<div class="col-md-4" style="padding-top: 25%;">
+			<div class="col-md-4" style="padding-top: 12%;">
 				
 				<div class="row">
 					<div class="col-md-12">

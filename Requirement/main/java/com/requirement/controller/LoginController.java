@@ -33,12 +33,15 @@ public class LoginController {
 	 * @param user
 	 * @return
 	 */
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String login(@ModelAttribute("user") User user) {
 
-		System.out.println(user.getUserName() + user.getPassword());
+		System.out.println(user.getUserName() + " / " + user.getPassword());
 		String role = loginService.authenticateUser(user.getUserName(),
 				user.getPassword());
+		if(role == null){
+			return "redirect:/";
+		}
 		return "pages/index";
 	}
 	
