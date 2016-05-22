@@ -1,5 +1,7 @@
 package com.requirement.controller;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -34,7 +36,7 @@ public class LoginController {
 	 * @return
 	 */
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public String login(@ModelAttribute("user") User user) {
+	public String login(@ModelAttribute("user") User user, HttpServletRequest request) {
 
 		System.out.println(user.getUserName() + " / " + user.getPassword());
 		String role = loginService.authenticateUser(user.getUserName(),
@@ -42,6 +44,7 @@ public class LoginController {
 		if(role == null){
 			return "redirect:/";
 		}
+		request.getSession().setAttribute("currentUser", user);
 		return "pages/index";
 	}
 	

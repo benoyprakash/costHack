@@ -1,5 +1,7 @@
 package com.requirement.controller;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +14,18 @@ public class DashBoardController {
 	
 	@RequestMapping(value="/newrequirement" , method = RequestMethod.GET)
 	public String addNewRequirement(ModelMap model){
+		
 		return "pages/forms";
 	}
+	
+	@RequestMapping(value="/requirement/process" , method = RequestMethod.GET)
+	public String getRequirement(ModelMap model, HttpServletRequest request){
+		
+		
+		
+		return "pages/forms";
+	}
+	
+
 
 }
