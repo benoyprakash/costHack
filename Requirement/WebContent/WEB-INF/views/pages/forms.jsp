@@ -227,7 +227,7 @@
 								Settings
 						</a></li>
 						<li class="divider"></li>
-						<li><a href="login.jsp"> <i class="fa fa-sign-out fa-fw"></i>
+						<li><a href="${pageContext.request.contextPath}/"> <i class="fa fa-sign-out fa-fw"></i>
 								Logout
 						</a></li>
 					</ul> <!-- /.dropdown-user --></li>
@@ -409,9 +409,9 @@
 																class="fa fa-clock-o fa-fw"></i> 12 mins ago
 															</small>
 														</div>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing
-															elit. Curabitur bibendum ornare dolor, quis ullamcorper
-															ligula sodales.</p>
+														<p>
+															As per the requirement provided, does the interest calculation have any dependency on the various states ? 
+														</p>
 													</div></li>
 												<li class="right clearfix"><span
 													class="chat-img pull-right"> <img
@@ -425,9 +425,7 @@
 															</small> <strong class="pull-right primary-font">John
 																</strong>
 														</div>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing
-															elit. Curabitur bibendum ornare dolor, quis ullamcorper
-															ligula sodales.</p>
+														<p>Yes</p>
 													</div></li>
 												<li class="left clearfix"><span
 													class="chat-img pull-left"> <img
@@ -441,9 +439,7 @@
 																class="fa fa-clock-o fa-fw"></i> 14 mins ago
 															</small>
 														</div>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing
-															elit. Curabitur bibendum ornare dolor, quis ullamcorper
-															ligula sodales.</p>
+														<p>Could you please provide the additional details for interest calculations.</p>
 													</div></li>
 												<li class="right clearfix"><span
 													class="chat-img pull-right"> <img
@@ -455,11 +451,12 @@
 															<small class=" text-muted"> <i
 																class="fa fa-clock-o fa-fw"></i> 15 mins ago
 															</small> <strong class="pull-right primary-font">John
-																John</strong>
+																</strong>
 														</div>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing
-															elit. Curabitur bibendum ornare dolor, quis ullamcorper
-															ligula sodales.</p>
+														<p>
+															For the state California, the interest is 7%.
+															
+														</p>
 													</div></li>
 											</ul>
 										</div>

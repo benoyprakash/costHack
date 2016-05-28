@@ -91,11 +91,12 @@ body {
 									<h1>Welcome to <strong>iRs</strong> </h1>
 
 				<br />
-				<p>We help you to gather and analyze requirements.
+				<p>We help you to gather and analyze requirements
 				<ul>
 					<li>With the integration of complete SDLC cycle</li>
-					<li>Enhanced imformation processing using machine learning.</li>
+					<li>Enhanced imformation processing using machine learning</li>
 					<li>Support using chat bots</li>
+					<li>Making use of the advantages of Data Analytics</li>
 				</ul>
 				</p>
 					

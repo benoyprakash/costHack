@@ -48,6 +48,12 @@ public class LoginController {
 		return "pages/index";
 	}
 	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String loginget(HttpServletRequest request) {
+
+			return "pages/index";
+	}
+	
 
 
 }
