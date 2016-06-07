@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 @Controller
-@SessionAttributes({"user"})
 public class DashBoardController {
 	
 	@RequestMapping(value="/newrequirement" , method = RequestMethod.GET)

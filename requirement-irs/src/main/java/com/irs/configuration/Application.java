@@ -4,26 +4,26 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-/**
- * 
- *
- */
 @EnableWebMvc
 @SpringBootApplication
 @EnableAutoConfiguration
-@ComponentScan(basePackages = { "com.hostel.configuration", 
-		"com.hostel.controller", 
-		"com.hostel.service",
-		"com.hostel.entity"})
-//com.hostel.entity
-@EnableJpaRepositories("com.hostel.repository")
-public class Application extends WebMvcAutoConfiguration{
+@ComponentScan(basePackages = { "com.irs.configuration", 
+		"com.irs.controller", 
+		"com.irs.service",
+		"com.irs.entity"})
+@EnableJpaRepositories(value = {"com.irs.entity", "com.irs.repository"})
+@Configuration
+public class Application {
+	
 	public static void main(String[] args) throws Exception {
-		SpringApplication.run(Application.class, args);
+		ApplicationContext ctx = SpringApplication.run(Application.class, args);
+		
 		
 	}
 	
@@ -32,6 +32,5 @@ public class Application extends WebMvcAutoConfiguration{
  * http://kielczewski.eu/2014/04/spring-boot-mvc-application/
  */
 	
-	
-	
+
 }
